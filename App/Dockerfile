@@ -11,7 +11,7 @@ COPY requirement.txt ./
 RUN pip install -r requirement.txt
 
 #need to check on copy command 
-COPY RPS_Game.py /User/App/
+COPY RPS_Game.py .
 
 #creating container
 CMD [ "python","RPS_Game.py"]
