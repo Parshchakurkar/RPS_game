@@ -1,0 +1,17 @@
+version : "1.29"
+services:
+    mysql-py:
+        image: mysql
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: mysql-py
+
+    adminer:
+        image: adminer
+        restart: always
+        ports:
+            - 8080:8080
+
+    python-rps:
+        image: python
+        

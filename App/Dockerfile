@@ -10,6 +10,9 @@ COPY requirement.txt ./
 #installing dependencies
 RUN pip install -r requirement.txt
 
+#Exposing to port
+EXPOSE 5000
+
 #need to check on copy command 
 COPY RPS_Game.py .
 
